@@ -1,0 +1,127 @@
+/*REMEMBER TO CONVERT 10px ==> 1rem*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+
+  --gray: rgb(105, 105, 105);
+  --dark-gray: rgb(51, 51, 51);
+  --dark-blue: rgb(24, 41, 78);
+  --medium-blue: rgb(33, 72, 126);
+  --light-blue: rgb(47, 131, 159);
+
+  --cellGap: 2rem;
+  --font-size: 2.5rem;
+}
+body {
+  font-size: 1.6rem;
+  background-color: #333;
+  font-family: SansNarrow-Regular;
+}
+
+@font-face {
+  font-family: "SansNarrow-Regular";
+  src: url("fonts/PTSansNarrow-Regular.ttf") format("woff2");
+  src: url("fonts/PTSansNarrow-Regular.ttf") format("woff");
+}
+@font-face {
+  font-family: "SansNarrow-Bold";
+  src: url("fonts/PTSansNarrow-Bold.ttf") format("woff2");
+  src: url("fonts/PTSansNarrow-Bold.ttf") format("woff");
+}
+
+.font-bold {
+  font-family: SansNarrow-Bold;
+}
+
+/*REMEMBER TO CONVERT 10px ==> 1rem*/
+
+.navbar {
+  background-color: var(--gray);
+}
+
+ul {
+  list-style: none;
+}
+nav > ul {
+  display: flex;
+  gap: 4rem;
+}
+
+li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+.content {
+  position: relative;
+}
+
+#addButton {
+  left: 1.8rem;
+  color: white;
+  font-size:var(--font-size);
+  width: fit-content;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#svg_plus {
+  height:var(--font-size);
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(329deg) brightness(105%) contrast(100%);
+}
+#svg_plus:hover {
+  cursor: pointer;
+}
+
+.banks {
+  position: relative;
+  left: 1.8rem;
+  font-size:var(--font-size);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.bankColumn {
+  display: flex;
+  flex-direction: column;
+}
+.bankColumn {
+  position: relative;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap:var(--cellGap);
+}
+
+.sortColumn > span:nth-of-type(1) {
+  margin-bottom: 1rem;
+}
+
+#idBank div {
+  font-size:var(--font-size);
+  line-height:var(--font-size);
+}
+
+.banks input {
+  position: relative;
+  width: 5rem;
+  height:var(--font-size);
+  font-size:var(--font-size);
+  text-align: center;
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-color: #353535;
+  
+
+}
+
+.banks input:focus {
+  outline: none;
+}

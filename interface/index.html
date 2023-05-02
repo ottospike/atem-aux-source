@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="renderer.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li>ATEM</li>
+        <li>vMix</li>
+        <li>Companion</li>
+        <li>TCP Server</li>
+        <li>TCP Client</li>
+      </ul>
+    </nav>
+    <div class="content">
+      <div class="banks">
+          <div class="bankColumn" id="idBank">
+            <span>#</span>
+            <div>1.</div>
+          </div>
+          <div class="bankColumn" id="idKey">
+            <span>Key</span>
+            <input class = "bankInput keyInput" oninput="handleKeyInput(this)" type="text" id="bank1_key">
+          </div>
+          <div class="bankColumn" id="idAtem">
+            <span>Atem</span>
+            <input class = "bankInput atemInput" type="text" id="bank1_target">
+          </div>
+        </div>
+      </div>
+      <div id="addButton">
+        <span>Add</span>
+        <img id="svg_plus" src="assets/plus.svg" alt="" srcset="">
+      </div>
+    </div>
+  </body>
+
+</html>
